@@ -1,1 +1,821 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+@font-face {
+    font-family:afont;
+    src: url(public/font/AvantGarde Bd BT);
+}
+*/
+
+@font-face {
+    font-family: impfont;
+    src: url(/assets/font/imp.ttf);
+}
+
+p, a {
+    text-decoration: none;
+}
+
+p {
+    font-family: frfont, Helvetica, Tahoma, Geneva, sans-serif;
+    /*line-height:1.3;*/
+    font-size: 27px;
+}
+
+.content-box p{ font-size:20px;}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #a75468;
+    cursor: pointer;
+}
+
+h1 {}
+
+h1.better {
+    color: #fff;
+    font-family: fbfont;
+    font-size: 88px;
+    text-shadow: 1px 1px 3px #666;
+    text-align: center!important;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #785177;
+}
+
+h2.better {
+    font-family: fmbfont;
+    font-size: 37px;
+    margin-bottom: 10px;
+}
+
+.pagewarp {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#top-redline {
+    float: left;
+    background: #005bef;
+    width: 100%;
+    height: 3px;
+}
+
+#index-banner {
+    background: url(/assets/images/banner-index-bg_02.jpg) top center no-repeat #000;
+    float: left;
+    width: 100%;
+    height: 750px;
+    color: #fff;
+    text-align: center;
+}
+
+.sep {
+    background: url(/assets/images/sep.png) repeat-x;
+    height: 1px;
+    width: 380px;
+    margin: 28px auto;
+}
+
+img.logo-main {
+    margin-top: 30px;
+}
+
+#menu-index {
+    float: left;
+    width: 100%;
+    height: 20px;
+    background: url(/assets/images/bg-50black.png) repeat;
+    padding: 7px 0;
+    margin-top: 5px;
+}
+
+#menu-index ul {}
+
+#menu-index ul li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+#menu-index ul li:first-child {
+    margin: 0;
+}
+
+#menu-index ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-style: italic
+}
+
+#menu-index ul li a:hover {
+    color: #ec0928;
+}
+
+#slogan {
+    margin: 200px 0 0 0;
+}
+
+#slogan img {
+    margin-left: 25px;
+}
+
+#slogan img:first-child {
+    margin-left: 0px;
+}
+
+p.slogan-txt1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 8px;
+    line-height: 0;
+}
+
+p.slogan-txt2 {
+    font-size: 125px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#authenticity {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+    background: #3989e2;
+    text-align: center;
+}
+
+#authenticity span {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-style: initial;
+    font-weight: bold;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+#authenticity input {
+    background: #ffffff;
+    border: 3px solid #000;
+    color: #000;
+    height: 28px;
+    width: 195px;
+    margin: 0 0px;
+    padding: 2px 12px;
+}
+
+#authenticity input::placeholder {
+    color: #fff
+}
+
+#authenticity button {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    height: 38px;
+    vertical-align: middle;
+    margin-left: 3px;
+    padding: 0 17px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#authenticity button:hover {
+    color: #ec0928;
+}
+
+#product-teaser {
+    float: left;
+    width: 100%;
+    padding: 20px 0 50px 0;
+    text-align: center;
+}
+
+#product-teaser p {
+    font-size: 17px;
+}
+
+.head-subject1 {
+    float: left;
+    width: 100%;
+    border: 2px solid #3989e2;
+    /* background: url(/assets/images/subject-bg.jpg) repeat-x #fff; */
+    height: 38px;
+    margin-bottom: 32px;
+}
+
+.head-subject1 h1 {
+    background: url(/assets/images/z-bg.png) no-repeat center #fff;
+    width: 220px;
+    margin: 0 auto;
+    font-size: 23px;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+a.to-product {
+    color: #0790f9;
+    font-size: 12px;
+}
+
+a:hover.to-product {
+    text-decoration: underline;
+}
+
+.product-teaser-box {
+    text-align: center;
+    width: 33%;
+    float: left;
+    margin: 0 0 30px 0;
+}
+
+.product-teaser-box h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.product-teaser-box img {
+    margin: 0 0 32px 0;
+}
+
+#sub-footer {
+    background: #3989e2;
+    width: 100%;
+    float: left;
+    color: #fff;
+    padding: 50px 0 65px 0px;
+}
+
+.box-25percent {
+    float: left;
+    width: 25%;
+}
+
+.box-25percent h1 {
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 3;
+}
+
+.box-25percent ul {}
+
+.box-25percent ul li {
+    list-style: none;
+}
+
+.box-25percent ul li a {
+    color: #fff;
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+.box-25percent ul li a:hover {
+    color: black;
+}
+
+.box-25percent ul li:first-child a.main-menu {
+    line-height: 3;
+}
+
+.box-25percent ul li a.main-menu {
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 2.5;
+}
+
+#footer {
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+    background: #000;
+    color: #fff;
+    border-top: 1px solid #bababa;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/*  inner page  */
+
+.container-left {
+    width: 213px;
+    background: #70b3ff;
+    position: fixed;
+    z-index: 1;
+}
+
+.container-right {
+    float: left;
+    margin: 0 0 0 213px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+#inner-content {
+    float: left;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    min-height: 500px;
+    padding: 20px 0;
+}
+
+ul.menu-inner {
+    margin: 40px 0 0 29px;
+    float: left;
+}
+
+ul.menu-inner li {
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: italic;
+}
+
+ul.menu-inner li a {}
+
+ul.menu-inner li a:hover {
+    color: #fff;
+    font-weight: normal;
+}
+
+ul.kind-steroid {
+    float: right;
+    margin-right: 20px;
+}
+
+ul.kind-steroid li {
+    display: inline-block;
+}
+
+ul.kind-steroid li a {
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+ul.kind-steroid li a:hover {
+    color: #005bef;
+}
+
+body#inner-page .head-subject1 h1 {
+    float: left;
+    width: auto;
+    padding: 5px 20px;
+}
+
+.content-box {
+    margin: 40px 0 0 50px;
+    float: left;
+}
+
+img.product-thump-img {
+    float: left;
+    margin: -38px 10px 0 0;
+}
+
+.info-section h1 {
+    float: left;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 0 20px 15px 0;
+}
+
+.info-section span {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.info-section {
+    float: left;
+    width: 600px;
+}
+
+.info-section p {
+    font-size: 15px;
+}
+
+.performance-infograph {
+    float: left;
+    margin: 25px 25px 0 0;
+}
+
+.dose-info-box {
+    float: left;
+    margin: 25px 0 0 0;
+}
+
+.performance-infograph table tr td.performance-subject {
+    width: 125px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.performance-infograph table tr td.performance-star {}
+
+.dose-info-box table tr td.dose-subject {
+    width: 95px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.dose-info-box table tr td.dose-info {
+    width: 185px;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.performance-star div {
+    float: left;
+    margin-right: 7px;
+}
+
+.star-performanceR {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #3989e2;
+}
+
+.star-performance {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: grey;
+}
+
+#top-nav-res {
+    color: #fff;
+    float: left;
+    width: 100%;
+    background: #ec0928;
+    display: none;
+}
+
+#top-nav-res-inner {
+    color: #fff;
+    float: left;
+    width: 100%;
+    background: #ec0928;
+    display: none;
+}
+
+#top-nav-res-inner ul {
+    float: right;
+    margin: 32px 0 0 0;
+}
+
+#top-nav-res-inner ul li {
+    display: inline-block;
+}
+
+#top-nav-res-inner ul li a {
+    font-size: 13px;
+    margin-right: 13px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#top-nav-res-inner ul li a:hover {
+    text-decoration: underline;
+}
+
+.res-btn {
+    display: none;
+}
+
+.product-box {
+    float: left;
+    margin: 30px 0;
+}
+
+#logo {
+    margin: 20px 0 0 10px;
+}
+
+.menu {
+    float: right;
+    margin-top: 56px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    float: left;
+    margin-left: 40px;
+    font-family: Helvetica, tahoma;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
+.labs-thump-box{ float:left; margin:20px;  text-align:center; font-size:13px!important;}
+#authenticity-vdo{ width:100%; float:left; height: 300px; padding:30px 0; background: url(/assets/images/vdo-bg.jpg) top right no-repeat #005bef;  }
+
+.tube-box{ width: 534px; margin:0 auto;}
+.tube-box iframe{ width:100%; height:100%;}
+.tube-box img { width: 100%; max-width: 500px;}
+
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {}
+
+@media screen and (max-width: 1200px) {
+    body#inner-page .pagewarp {
+        width: 100%!important;
+        float: left;
+    }
+    body#inner-page .pagewarp .box-25percent {
+        width: 21%;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    #top-nav-res-inner {
+        display: block;
+    }
+    .pagewarp {
+        width: 96%;
+        padding: 0 2%;
+        overflow: hidden;
+    }
+    #authenticity input {
+        width: 20%;
+    }
+    .container-right {
+        margin: 0;
+        width: 100%;
+    }
+    .container-left {
+        display: none;
+    }
+    .container-right {
+        width: 100%!important;
+        padding: 0;
+        height: auto!important;
+    }
+    .content-box {
+        margin: 40px 2% 0 2%;
+    }
+    .info-section {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	.tube-box{ width: 100%; }
+    .container-right #top-redline {
+        display: none;
+    }
+    #top-redline {
+        position: fixed;
+        z-index: 2;
+    }
+    #menu-index {
+        position: fixed;
+        top: 1px;
+        z-index: 2;
+    }
+    #menu-index ul li {
+        margin-left: 5%;
+    }
+    img.logo-main {
+        margin-top: 70px;
+    }
+    #slogan {
+        margin-top: 165px;
+    }
+    #authenticity span {
+        font-size: 16px;
+        margin-right: 0;
+    }
+    body#inner-page .head-subject1 h1 {
+        font-size: 20px;
+    }
+    .pagewarp {
+        padding: 0;
+    }
+    ul.kind-steroid {
+        display: none;
+    }
+    #top-nav-res-inner {
+        text-align: center;
+    }
+    #top-nav-res-inner ul {
+        text-align: center;
+        margin: 19px 0 15px 0;
+        float: none;
+    }
+    .content-box {
+        margin-top: 0px;
+    }
+    .dose-info-box table tr td.dose-subject {
+        width: 117px;
+    }
+    .dose-info-box {
+        margin: 13px 0 0 0;
+    }
+    #innef-content .head-subject1 {
+        margin-bottom: 9px;
+    }
+    .box-25percent h1 {
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	#authenticity-vdo{ padding:12px 0;}
+	/* .tube-box{ height:160px;} */
+    #slogan {
+        margin-top: 85px;
+    }
+    p.slogan-txt1 {
+        font-size: 20px;
+    }
+    p.slogan-txt2 {
+        font-size: 95px;
+    }
+    .sep {
+        margin: 13px auto;
+    }
+    #authenticity {
+        padding: 30px 0;
+    }
+    #authenticity span {
+        font-size: 23px;
+        width: 100%;
+        float: left;
+        margin-bottom: 13px;
+    }
+    #index-banner {
+        height: 550px;
+    }
+    #authenticity input {
+        width: 31%;
+    }
+    .product-teaser-box img {
+        margin: 0 0 11px 0;
+        width: 100%;
+    }
+    #sub-footer {
+        display: none;
+    }
+    #top-nav-res-inner ul li a {
+        font-size: 13px;
+        margin-right: 6px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #product-teaser p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+    #sub-footer {
+        display: block;
+    }
+    #footer {
+        background: #ec0928;
+        border: none;
+    }
+    #top-nav-res {
+        display: block;
+    }
+    #injecton-steroid-menu {
+        display: none;
+    }
+    #oral-steroid-menu {
+        display: none;
+    }
+    #peptide-menu {
+        display: none;
+    }
+    #bottom-menu {
+        width: 100%!important;
+    }
+    #menu-index {
+        display: none;
+    }
+    img.logo-main {
+        margin: 18px 0 0 0;
+    }
+    p.slogan-txt1 {
+        font-size: 17px;
+        letter-spacing: 6px;
+    }
+    p.slogan-txt2 {
+        font-size: 74px;
+    }
+    #slogan img {
+        margin-left: 8px;
+        height: 65px;
+    }
+    .sep {
+        width: 80%;
+    }
+    #authenticity button {
+        padding: 0;
+        width: 85%;
+    }
+    #authenticity input {
+        width: 80%;
+        margin: 0 0 10px 0!important;
+        text-align: center;
+    }
+    #sub-footer {
+        padding: 10px 0 3px 0;
+    }
+    .box-25percent ul li {
+        list-style: none;
+        text-align: center;
+        border-top: 1px solid grey;
+    }
+    .box-25percent ul li:first-child {
+        border: none;
+    }
+    .res-btn {
+        display: unset;
+    }
+    #top-nav-res-inner ul {
+        display: none;
+    }
+    body#inner-page .pagewarp .box-25percent {
+        padding: 0
+    }
+}

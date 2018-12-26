@@ -1,0 +1,136 @@
+<div id="top-redline"></div>
+<div id="top-nav-res">
+    <a style="color:#fff; float:left; margin:10px  0 0 10px; " href="#product-teaser">GAINZ PRODUCT</a>
+    <a href="#sub-footer"><img style="float:right;" src="../assets/images/menu-responsive-btn.jpg" /></a>
+</div>
+<div id="index-banner">
+    <img class="logo-main" src="../assets/images/index-logo.png">
+    <div id="menu-index">
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/product">product</a></li>
+            <!--<li><a href="news.php">news</a></li>-->
+            <li><a href="#authenticity">authenticity</a></li>
+            <!--<li><a href="dealer.php">dealer</a></li>-->
+
+        </ul>
+    </div>
+    <div id="slogan">
+        <p class="slogan-txt1">Don’t cheat your</p><br>
+        <p class="slogan-txt2">#GAIN</p>
+        <div class="sep"></div>
+        <img src="../assets/images/guarantee1-icn.png">
+        <img src="../assets/images/guarantee2-icn.png">
+        <img src="../assets/images/guarantee3-icn.png">
+    </div>
+</div>
+<div id="authenticity-vdo">
+    <div class="pagewarp">
+        <div class="tube-box">
+            <!--iframe width="560" height="315" src="https://www.youtube.com/embed/taXh8lxCx3w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe -->
+            <a href="/public/videos/GAINZLAB-PRODUCT.mp4" data-fancybox>
+                <img src="../assets/images/video-cover.jpg">
+            </a>
+        </div>
+    </div>
+
+</div>
+<div id="authenticity">
+    <div class="pagewarp">
+        <form #f="ngForm" (ngSubmit)="submit(f)">
+            <span>authenticity:</span>
+            <input type="text" name="code1" placeholder="first line code" class="auth_code" id="auth_first_line"
+                required minlength="3" maxlength="15" ngModel name="vcode" #fullName="ngModel" id="vcode">
+
+            <button id="auth_btn">check</button>
+        </form>
+        <div class="col-xl-8 offset-xl-2 py-5" *ngIf="result === 'yes'">
+
+            <h2 style="color: greenyellow;">Your product is genuine!</h2>
+        </div>
+        <div class="col-xl-8 offset-xl-2 py-5" *ngIf="result === 'no'">
+
+            <h2 style="color: red;">Sorry, Your code is not valid!</h2>
+        </div>
+    </div>
+</div>
+<div id="product-teaser">
+    <div class="head-subject1">
+        <h1>Gainz Product</h1>
+    </div>
+    <div class="pagewarp">
+        <div class="product-teaser-box">
+            <a href="/injection"><img src="../assets/images/injection-teaser.jpg"></a>
+            <h1>Injection</h1>
+            <a class="to-product" href="/injection">read more</a>
+        </div>
+        <div class="product-teaser-box">
+            <a href="/oral"><img src="../assets/images/oral-teaser.jpg"></a>
+            <h1>Oral</h1>
+            <a class="to-product" href="/oral">read more</a>
+        </div>
+        <div class="product-teaser-box">
+            <a href="/peptide"><img src="../assets/images/peptide-teaser.jpg"></a>
+            <h1>Peptide</h1>
+            <a class="to-product" href="/peptide">read more</a>
+        </div>
+        <p>Gainz labs being founded by professional bodybuilders and suppliers specialized in medicine. We are offering
+            the most comprehensive variety of anabolic/androgenic steroids to date. Our product diversity reaches from
+            anabolic/androgenic hormones to anti-estrogens over to peptide and proteins indifferent formulations such
+            as tablets and injections.</p>
+    </div>
+</div>
+<div id="sub-footer">
+    <div class="pagewarp">
+        <div class="box-25percent" id="injecton-steroid-menu">
+            <ul>
+                <h1>Injection steroid</h1>
+                <li><a href="/injection">WINNY-100</a></li>
+                <li><a href="/injection">TREN A-100</a></li>
+                <li><a href="/injection">EQ-300</a></li>
+                <li><a href="/injection">DECA-300</a></li>
+                <li><a href="/injection">TEST P-100</a></li>
+                <li><a href="/injection">SUSTANON-300</a></li>
+                <li><a href="/injection">TEST E-300</a></li>
+                <li><a href="/injection">PRIMO-100</a></li>
+                <li><a href="/injection">MAST P-100</a></li>
+                <li><a href="/injection">TREN E-200</a></li>
+                <li><a href="/injection">CYP-300</a></li>
+            </ul>
+        </div>
+        <div class="box-25percent" id="oral-steroid-menu">
+            <ul>
+                <h1>Oral steroid</h1>
+                <li><a href="/oral">OXAN-10</a></li>
+                <li><a href="/oral">STANO-10</a></li>
+                <li><a href="/oral">CLEN-40</a></li>
+                <li><a href="/oral">DBOL-10</a></li>
+                <li><a href="/oral">OXY-50</a></li>
+                <li><a href="/oral">CYTOMEL</a></li>
+            </ul>
+        </div>
+        <div class="box-25percent" id="peptide-menu">
+            <ul>
+                <h1>Peptide</h1>
+                <li><a href="/peptide">HGH</a></li>
+                <li><a href="/peptide">GHRP-6</a></li>
+                <li><a href="/peptide">IGF-1</a></li>
+                <li><a href="/peptide">CJC</a></li>
+                <li><a href="/peptide">MGF</a></li>
+            </ul>
+        </div>
+        <div class="box-25percent" id="bottom-menu">
+            <ul>
+                <li><a class="main-menu" href="/">Home Pages</a></li>
+                <li><a class="main-menu" href="labstest.php">Labs test </a></li>
+                <!--<li ><a class="main-menu" href="news.php">News</a></li>-->
+                <li><a class="main-menu" href="/product">Product</a></li>
+                <li><a class="main-menu" href="/#authenticity">Authenticity</a></li>
+                <!--<li ><a class="main-menu" href="dealer.php">Dealer</a></li> 
+             <li ><a class="main-menu" href="about.php">About us</a></li>    -->
+                <li> <a class="main-menu" href="#">contact</a>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="footer"> © Copyright gainzlab.com, 2017</div>
