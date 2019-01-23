@@ -703,6 +703,14 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
 }
 
 @media screen and (max-width: 480px) {
+
+    img.product-thump-img {
+        width: 100%;
+    }
+
+    .padd {
+        margin-top: 25px;
+    }
 	#authenticity-vdo{ padding:12px 0;}
 	/* .tube-box{ height:160px;} */
     #slogan {
