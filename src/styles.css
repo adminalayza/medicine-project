@@ -268,7 +268,7 @@ p.slogan-txt2 {
 }
 
 .head-subject1 h1 {
-    background: url(/assets/images/z-bg.png) no-repeat center #fff;
+    background: url(/assets/images/z-zbg.png) no-repeat center #fff;
     width: 220px;
     margin: 0 auto;
     font-size: 23px;
@@ -529,7 +529,7 @@ img.product-thump-img {
     color: #fff;
     float: left;
     width: 100%;
-    background: #ec0928;
+    background: #0790f9;
     display: none;
 }
 
