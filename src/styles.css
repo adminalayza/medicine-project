@@ -255,6 +255,7 @@ p.slogan-txt2 {
 
 #product-teaser p {
     font-size: 17px;
+    display: inline-block;
 }
 
 .head-subject1 {
@@ -439,6 +440,8 @@ body#inner-page .head-subject1 h1 {
 img.product-thump-img {
     float: left;
     margin: -38px 10px 0 0;
+    width: 209px;
+    height: 220px;
 }
 
 .info-section h1 {
@@ -746,6 +749,7 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
     #product-teaser p {
         font-size: 11px;
         line-height: 1.5;
+        
     }
     #sub-footer {
         display: block;
@@ -818,4 +822,8 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
     body#inner-page .pagewarp .box-25percent {
         padding: 0
     }
+}
+
+#oral-steroid-menu {
+    display: none;
 }
