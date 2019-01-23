@@ -264,7 +264,7 @@ p.slogan-txt2 {
     border: 2px solid #3989e2;
     /* background: url(/assets/images/subject-bg.jpg) repeat-x #fff; */
     height: 38px;
-    margin-bottom: 32px;
+    margin-bottom: 70px;
 }
 
 .head-subject1 h1 {
@@ -277,6 +277,7 @@ p.slogan-txt2 {
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1.5;
+    color: black;
 }
 
 a.to-product {
@@ -304,6 +305,7 @@ a:hover.to-product {
 
 .product-teaser-box img {
     margin: 0 0 32px 0;
+    height: 210px;
 }
 
 #sub-footer {
@@ -355,8 +357,8 @@ a:hover.to-product {
     float: left;
     width: 100%;
     padding: 15px 0;
-    background: #000;
-    color: #fff;
+    background: #3989e2;
+    color: black;
     border-top: 1px solid #bababa;
     text-align: center;
     font-size: 13px;
@@ -367,7 +369,7 @@ a:hover.to-product {
 
 .container-left {
     width: 213px;
-    background: #70b3ff;
+    background: #3989e2;
     position: fixed;
     z-index: 1;
 }
@@ -383,8 +385,8 @@ a:hover.to-product {
 #inner-content {
     float: left;
     width: 100%;
-    background: #fff;
-    color: #000;
+    background: #3c3c3c;
+    color: white;
     min-height: 500px;
     padding: 20px 0;
 }
@@ -417,7 +419,7 @@ ul.kind-steroid li {
 }
 
 ul.kind-steroid li a {
-    color: #000;
+    color: #fff;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -606,8 +608,14 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
         padding: 0 2%;
     }
 }
+@media screen and (min-width: 960px) {
 
+    .product-teaser-box {
+        margin-top: 25px;
+    }
+}
 @media screen and (max-width: 960px) {
+
 
     #top-nav-res-inner {
         display: block;
@@ -707,7 +715,9 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
     img.product-thump-img {
         width: 100%;
     }
-
+    .product-teaser-box {
+        display: contents;
+    }
     .padd {
         margin-top: 25px;
     }
@@ -743,6 +753,7 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
     .product-teaser-box img {
         margin: 0 0 11px 0;
         width: 100%;
+
     }
     #sub-footer {
         display: none;
@@ -763,7 +774,7 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
         display: block;
     }
     #footer {
-        background: #ec0928;
+        background: #3989e2;
         border: none;
     }
     #top-nav-res {
@@ -838,4 +849,12 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
 
 .dose-info-box {
     display: none;
+}
+
+body {
+    background: #3c3c3c;
+}
+
+img {
+    border: 1px solid black;
 }
