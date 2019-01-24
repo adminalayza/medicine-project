@@ -44,7 +44,7 @@ import { OralComponent } from './oral/oral.component';
         component: PeptideComponent
       },
       {
-        path: 'oral',
+        path: 'performance-enhancer',
         component: OralComponent
       },
       {

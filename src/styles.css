@@ -648,7 +648,15 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
     }
 }
 
+@media screen and (min-width: 600px) {
+    .product-teaser-box img {
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 600px) {
+
+
 	.tube-box{ width: 100%; }
     .container-right #top-redline {
         display: none;
