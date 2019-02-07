@@ -76,7 +76,7 @@ p {
 .content-box p{ font-size:20px;}
 
 a {
-    color: #000;
+    color: white;
 }
 
 a:hover {
@@ -301,6 +301,7 @@ a:hover.to-product {
     text-transform: uppercase;
     font-size: 22px;
     font-weight: bold;
+    color: white;
 }
 
 .product-teaser-box img {
@@ -882,7 +883,8 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
 }
 
 body {
-    background: #3c3c3c;
+    background: black;
+    color: white;
 }
 
 img {
