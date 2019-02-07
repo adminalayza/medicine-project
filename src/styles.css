@@ -121,7 +121,7 @@ h2.better {
 }
 
 #index-banner {
-    background: url(/assets/images/slide.jpg) top center no-repeat #000;
+    /* background: url(/assets/images/slide.jpg) top center no-repeat #000; */
     float: left;
     width: 100%;
     height: 750px;
@@ -171,11 +171,11 @@ img.logo-main {
 }
 
 #slogan {
-    margin: 200px 0 0 0;
+    /* margin: 200px 0 0 0; */
 }
 
 #slogan img {
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 
 #slogan img:first-child {
@@ -652,6 +652,14 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
     .product-teaser-box img {
         width: 200px;
     }
+    #slogan img {
+        margin-left: 8px;
+        height: 486px;
+    }
+
+    .img-resp {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -716,6 +724,7 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
         font-size: 10px;
         font-weight: bold;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -770,6 +779,15 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
         font-size: 13px;
         margin-right: 6px;
     }
+
+    #slogan img {
+        margin-left: 8px;
+        height: 250px;
+    }
+
+    .img-resp {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -815,7 +833,11 @@ img.lab-thump{ border:1px solid grey; margin-bottom:5px; }
     }
     #slogan img {
         margin-left: 8px;
-        height: 65px;
+        height: 250px;
+    }
+
+    .img-resp {
+        width: 100%;
     }
     .sep {
         width: 80%;
@@ -866,3 +888,7 @@ body {
 img {
     border: 1px solid black;
 }
+
+/* .img-resp {
+    width: 50%;
+} */
